@@ -1,0 +1,196 @@
+@charset "UTF-8";
+* {
+  position: relative;
+  font-family: 微軟正黑體;
+  vertical-align: top;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.phone {
+  width: 250px;
+  padding: 10px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  left: 0px;
+}
+
+.top {
+  height: 50px;
+}
+
+.top .lens {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.screen {
+  height: 350px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.screen .pages {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  white-space: nowrap;
+  font-size: 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  left: 0px;
+}
+
+.screen .pages .page {
+  font-size: initial;
+  display: inline-block;
+  background: #333;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  white-space: normal;
+  color: #eee;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.screen .pages .page p {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.screen .pages .page h2 {
+  font-size: 20px;
+  color: white;
+  margin: 0px;
+  padding: 10px;
+}
+
+.screen .pages .page:before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content: "";
+  display: block;
+  background: #f5b942;
+  height: 60px;
+  width: 100%;
+}
+
+.screen .pages .page:after {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  content: "";
+  display: block;
+  background: #f5b942;
+  height: 30px;
+  width: 100%;
+}
+
+.screen .pages .page1 {
+  background-color: #f5b942;
+  padding: 10px;
+}
+
+.screen .pages .page1 .orange {
+  width: 300px;
+  height: 300px;
+  background-color: #f5a505;
+  border-radius: 100%;
+}
+
+.screen .pages .page1 h2 {
+  margin-bottom: 0px;
+}
+
+.screen .pages .page1 h1 {
+  margin-top: 0px;
+}
+
+.bottom {
+  height: 60px;
+}
+
+.bottom .home {
+  border: solid 1px rgba(0, 0, 0, 0.2);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 100%;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 27px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.bottom .home:hover {
+  background-color: #d1d1d1;
+}
+
+.status, .phone-name {
+  color: white;
+  margin: 0px;
+  padding: 4px 8px;
+}
+
+.status {
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.phone-name {
+  margin: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.buttons button {
+  background-color: transparent;
+  border: solid 1px rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 5px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #fff;
+  color: blue;
+}
+/*# sourceMappingURL=style.css.map */
